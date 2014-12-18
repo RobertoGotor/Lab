@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>ToDoList</title>
+</head>
+<body>
+	
+	<form method="get" action="/add">
+	<fieldset>
+		<legend>Add a Task:</legend>
+			Task name: <input type="text" name="name"><br /> 
+			Task project: <input type="text" name="project"><br /> 
+			Task priority: <input type="number" name="priority"><br /> 
+			Task context: <input type="text" name="context"><br />
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>	
+	<hr />
+	<form method="post" action="/listar">
+		
+		Show list <input type="submit" value="List">
+	</form>	
+	<hr />
+	<form method="get" action="/buscar">
+		
+		
+		Search by task name: <input type="text" name="text">
+		<input type="submit" value="Search">
+	</form>	
+	<hr />
+	
+</body>
+</html>
