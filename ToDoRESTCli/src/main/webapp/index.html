@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>ToDoList REST Client</title>
+</head>
+<body>
+	
+	<form method="post" action="/handler">
+	<fieldset>
+		<legend>Add a Task:</legend>
+			Task name: <input type="text" name="name"><br /> 
+			Task project: <input type="text" name="project"><br /> 
+			Task priority: <input type="number" name="priority"><br /> 
+			Task context: <input type="text" name="context"><br />
+			<input type="hidden" name="type" value="add">
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>	
+	<form method="post" action="handler">
+		<fieldset>
+		<legend>Show List:</legend>
+		<input type="hidden" name="type" value="show">
+			Show list <input type="submit" value="List">
+		</fieldset>
+	</form>	
+	<form method="post" action="handler">
+	<fieldset>
+		<legend>Search a Task:</legend>
+			Search by task name: <input type="text" name="name">
+			<input type="hidden" name="type" value="search">
+			<input type="submit" value="Search">
+		</fieldset>
+	</form>	
+	<form method="post" action="handler">
+	<fieldset>
+		<legend>Delete a Task:</legend>
+			Delete by task name: <input type="text" name="name">
+			<input type="hidden" name="type" value="delete">
+			<input type="submit" value="Delete">
+		</fieldset>
+	</form>	
+	<form method="post" action="/handler">
+	<fieldset>
+		<legend>Modify a Task by name:</legend>
+			Task name: <input type="text" name="name"><br /> 
+			New task project: <input type="text" name="project"><br /> 
+			New task priority: <input type="number" name="priority"><br /> 
+			New task context: <input type="text" name="context"><br />
+			<input type="hidden" name="type" value="mod">
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>	
+</body>
+</html>
